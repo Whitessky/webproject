@@ -1,0 +1,118 @@
+ body{
+	background-image: url(photos/background.jpg);
+	font-family: 华文新魏, Georgia, Serif;
+}
+
+
+#logo:hover{
+	
+     box-shadow:0px 0px 2px 3px #000;
+	 -webkit-transform:rotate(10deg);
+
+}
+
+nav{
+	width: 1320px;
+	height: 130px;
+	margin: 10px;
+	border: thin solid white;
+	box-shadow:3px 0px 3px 3px #fff;
+	
+}
+#left{
+	width: 500px;
+	float: left;
+	list-style-type: none;
+	padding: 5px 0px 5px 0px;
+	display: inline;
+}
+
+#right {
+	float: right;
+	list-style-type: none;
+	padding: 5px 0px 5px 0px;
+	margin: 40px 50px 50px 10px;
+	
+	display: inline;
+}
+nav ul li{
+	
+	font-size: 350%;
+	display: inline;
+	padding: 5px 10px 5px 10px;
+}
+ #register{
+
+ 	font-family: 华文新魏 ; 
+ 	font-size: 22px; 
+ 	margin-right: 10px;
+ 	background-color: #FF0000;
+ 	}
+
+#login{
+    font-family: 华文新魏 ; 
+ 	font-size: 22px; 
+ 	margin-left: 10px;
+ 
+} 
+
+#main{
+	font-size: 20px;
+	width:1320px;
+	display: inline;
+
+}
+#key{
+  margin-left: 40px;
+  margin-top: 30px;
+  color: #696969;
+  display: inline;
+}
+
+div.tableRow{
+	display: table-row;
+}
+
+div.tableRow p{
+	display: table-cell;
+	vertical-align: top;
+	padding: 3px;
+}
+
+div.tableRow p:first-child{
+     text-align: right;
+}
+
+p.heading{
+	font-size: 25px;
+	font-weight: bold;
+}
+
+a:link{
+	color: #FAEBD7;
+	text-decoration: none;
+}
+
+
+
+a:hover{
+	color:#CCCCFF;
+}
+#picture{
+	float: right;
+	width: 80%;
+	display: inline;
+}
+
+div#picture ul li{
+display: inline; 
+}
+
+div#picture ul li div p{
+display: block; 
+text-align: center;
+}
+
+div#picture ul li div p img:hover{
+   box-shadow:0px 0px 2px 3px #000;
+}

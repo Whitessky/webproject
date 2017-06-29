@@ -1,0 +1,117 @@
+@CHARSET "UTF-8";
+body{
+	background-image: url(photos/background.jpg);
+	font-family: 华文新魏, Georgia, Serif;
+}
+
+
+#logo:hover{
+	
+     box-shadow:0px 0px 2px 3px #000;
+	 -webkit-transform:rotate(10deg);
+
+}
+
+nav{
+	width: 1320px;
+	height: 130px;
+	margin: 10px;
+	border: thin solid white;
+	box-shadow:3px 0px 3px 3px #fff;
+	
+}
+
+#left{
+	width: 500px;
+	float: left;
+	list-style-type: none;
+	padding: 5px 0px 5px 0px;
+	display: inline;
+}
+
+#right {
+	float: right;
+	list-style-type: none;
+	padding: 5px 0px 5px 0px;
+	display: inline;
+}
+
+nav ul li{
+	
+	font-size: 350%;
+	display: inline;
+	padding: 5px 10px 5px 10px;
+}
+nav ul li#name{
+	padding-bottom: 10px;
+	width: 200px;
+}
+
+
+
+
+#search_key{
+        width: 150px;
+        height: 20px;
+        
+        margin-top: 3px; 
+        margin-left: 5px;   
+        box-shadow:0px 0px 2px 3px ##696969;
+         
+    }
+ #submit{
+        background:url(web/search.png);
+        width:25px;
+        height: 20px;
+        border: none;
+        margin-bottom: 30px; 
+        margin-left: 5px;
+        margin-right: 20px;   
+        padding-top: 8px;
+      
+
+    }
+
+  #me{
+	height: 40px;
+	width: 40px;
+	margin-left: 25px;
+	margin-right: 25px;
+	margin-top: 30px;
+}
+
+
+ #message{
+    	float: right;
+    	margin-right: 40px;
+    	margin-top: 40px;
+    	margin-left: 20px;
+
+    }
+#me:hover, #message:hover{
+	box-shadow:0px 0px 2px 3px #696969;
+}
+table {
+	text-align: center;
+	font-weight: bold;
+	font-size: 150%;
+	width: 1320px;
+	margin-left: 10px;
+	margin-right: 10px;
+	border: thin solid white;
+	box-shadow:3px 0px 2px 3px #fff;
+}
+
+
+th {
+	border: thin dotted white;
+	padding: 10px;
+	opacity: 0.3;
+
+}
+td {
+	
+	padding: 5px;
+
+}
+

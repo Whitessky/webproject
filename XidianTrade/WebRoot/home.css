@@ -1,0 +1,476 @@
+charset="UTF-8"
+*{
+	border: 0;
+	margin: 0;
+	}
+
+body{
+	
+	background-image: url(photos/xidian.jpg);
+	background-size: cover;
+	font-family: "Georgia", "Tahoma", "Sans-Serif";
+	font-size: 25px;
+	color: rgba(255,255,255,0.6);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	}
+.username{
+	position:relative;
+	width: 200px;
+	float: right;
+	color:#444;
+	padding:0;
+	text-align:center;
+}
+.username p{
+	    display:block;
+	    height:90px;
+	    width:200px;
+	    line-height:90px;
+		font-size: 20px;
+		margin:0px;
+}
+.username .sub_menu{
+	background-color:#f8f8f8;
+	position:absolute;
+	top:90px;
+	right:0px;
+	display:none;
+	margin:0px;
+	padding:0px;
+	list-style:none;
+	width:200px;
+}
+.sub_menu li a{
+	font-size:20px;
+	color:#444;
+}
+.username:hover{
+	background-color:#e8e8e8;
+	background:rgba(0,0,0,.3);
+	cursor:pointer;
+}
+.username:hover p{
+	color:white;
+}
+.username:hover .sub_menu{
+	display:block;
+}
+.top{
+	width: 100%;
+	height: 150px;
+	
+	}
+	
+.logo{
+	margin-top: 25px;
+	margin-left: 30px;
+	}
+.logo img{
+	float: left;
+	}
+.tittle{
+	float: left;
+	}
+	
+.top-right{
+	float: right;
+	}
+	
+.login-nav{
+	width: 114px;
+	height: 50px;
+	font-size: 14px;
+	float: right;
+	/*display: none;*/
+	}
+.login-nav-hidden{
+	display: none;
+	}
+
+
+.login-nav .btn{
+	text-decoration: none;
+	color: #444444;
+	padding: 0;
+	width: 50px;
+	height: 30px;
+	float: left;
+}
+.login-nav input{
+	border: 0;
+	font-size:14px;
+	letter-spacing: 2px;
+	font:rgba(255,255,255,0.6);
+	cursor: pointer;
+
+
+
+	}
+
+.login-nav .register{
+	background-color: #C90000;
+	margin-right:10px;
+	float: left;
+	}
+.login-nav .register:hover{
+	background-color: #E53E49;
+	}
+.login-nav .login{
+	background-color: rgba(0,0,0,0.05);
+	border: 2px solid rgba(184,182,182,0.6);
+	float: left;
+	width: 50px;
+	height: 30px;
+	}
+.login-nav .login:hover{
+	background-color: rgba(0,0,0,0);
+	}
+	
+.center{
+	width: 680px;
+	height: 200px;
+	position: absolute;
+	left: 50%;
+	margin-left: -340px;
+	margin-top: 30px;
+	
+	}
+.center .text-line{
+	text-align: center;
+	font-size: 40px;
+	letter-spacing: 4px;
+	height: 50px;
+	width: 100%;
+	}
+#search_form{
+	margin-top: 20px;
+	border: 2px solid rgba(184,182,182,0.6);
+	background-color: rgba(0,0,0,0.1);
+	width: 400px;
+	height: 30px;
+	position: absolute;
+	left: 50%;
+	margin-left: -200px;
+	overflow:hidden;
+	}
+#query{
+	border: 2px solid rgba(184,182,182,0.6);
+	border-right: none;
+	background-color: rgba(0,0,0,0);
+	width: 363px;
+	height: 100%;
+	float: left;
+	font-size:18px;
+	letter-spacing: 2px;
+}
+.center .go{
+	border: 2px solid rgba(184,182,182,0.6);
+	background-color: rgba(0,0,0,0);
+	border-left: none;
+	float: left;
+	height: 100%;
+	float: right;
+	wi
+	}
+/*注册卡*/
+.register-card{
+	display: none;
+	
+		}
+.register-card-show{
+	width: 400px;
+	height: 350px;
+	border: none;
+	background-color: rgba(0,0,0,0.5);
+	text-align: center;
+	padding-top: 25px;
+	border-radius: 7px;
+	position: absolute;
+	left: 50%;
+	margin-left: -200px;
+	margin-top: 100px;
+	
+}
+		
+.register-card-show .line1{
+	margin-bottom: 15px;
+	width: 100%;
+	height: 25px;
+	}
+
+	
+.register-card-show .line2{
+	text-align:center;
+	color: rgba(255,255,255,0.6);
+	font-family: 'Avenir Next','Lantinghei SC';
+	font-size: 16px;
+	-webkit-font-smoothing: antialiased;
+	
+	margin-bottom: 15px;
+	width: 100%;
+	height: 25px;
+	}
+	
+
+.register-card-show .fengexian{
+	height: 4px;
+	border-top: 1px solid rgba(255,255,255,0.6);
+	width: 25px;
+	margin-top: 10px;
+	
+	}
+.register-card-show span{
+	margin-left: 10px;
+	margin-right: 10px;
+	}
+.register-card-show div{
+	display:inline-block;
+	}
+	
+.register-card-show .r-in{
+	width: 200px;
+	height: 30px;
+	margin-bottom: 15px;
+	border: none;
+	border-radius: 3px;
+
+	}
+#rbtn{
+	background-color: #C90000;
+	letter-spacing: 3px;
+	font-size: 18px;
+	font-family: 'Avenir Next','Lantinghei SC';
+	font-size: 16px;
+	cursor: pointer;
+
+	}
+	
+/*登录卡*/
+.login-card{
+	display: none;
+	
+		}
+.login-card-show{
+	width: 400px;
+	height: 305px;
+	border: none;
+	background-color: rgba(0,0,0,0.5);
+	text-align: center;
+	padding-top: 25px;
+	border-radius: 7px;
+	position: absolute;
+	left: 50%;
+	margin-left: -200px;
+	margin-top: 100px;
+	
+}
+
+		
+.login-card-show .line1{
+	margin-bottom: 15px;
+	width: 100%;
+	height: 25px;
+	}
+
+	
+.login-card-show .line2{
+	text-align:center;
+	color: rgba(255,255,255,0.6);
+	font-family: 'Avenir Next','Lantinghei SC';
+	font-size: 16px;
+	-webkit-font-smoothing: antialiased;
+	
+	margin-bottom: 15px;
+	width: 100%;
+	height: 25px;
+	}
+	
+
+.login-card-show .fengexian{
+	height: 4px;
+	border-top: 1px solid rgba(255,255,255,0.6);
+	width: 25px;
+	margin-top: 10px;
+	
+	}
+.login-card-show span{
+	margin-left: 10px;
+	margin-right: 10px;
+	}
+.login-card-show div{
+	display:inline-block;
+	}
+	
+.login-card-show .l-in{
+	width: 200px;
+	height: 30px;
+	margin-bottom: 15px;
+	border: none;
+	border-radius: 3px;
+
+	}
+#lbtn{
+	background-color: #C90000;
+	letter-spacing: 3px;
+	font-size: 18px;
+	font-family: 'Avenir Next','Lantinghei SC';
+	font-size: 16px;
+		cursor: pointer;
+
+	}
+	
+.close-btn{
+	background-color:rgba(255,255,255,.2);
+	border: 2px solid rgba(255,255,255,0.6);
+	width: 35px;
+	height: 35px;
+	border-radius: 50px;
+	font-family: 'Avenir Next','Lantinghei SC';
+	font-size: 14px;
+	-webkit-font-smoothing: antialiased;
+	line-height: 35px;
+	margin-top: 15px;	
+	cursor: pointer;
+
+	}
+	
+.close-btn:hover{
+	background-color:rgba(0,0,0,0);
+	height:40px;
+	width: 40px;
+	text-align: center;
+	line-height: 40px;
+	}
+	
+.search_form_hidden{
+	display: none;
+	}
+.search_form{
+	margin-top: 20px;
+	border: 2px solid rgba(184,182,182,0.6);
+	background-color: rgba(0,0,0,0);
+	width: 400px;
+	height: 30px;
+	position: absolute;
+	left: 50%;
+	margin-left: -200px;
+	overflow:hidden;
+	}
+
+.login-suc{
+	width: 400px;
+	height: 200px;
+	border: none;
+	background-color: rgba(0,0,0,0.5);
+	text-align: center;
+	padding-top: 25px;
+	border-radius: 7px;
+	position: absolute;
+	left: 50%;
+	margin-left: -200px;
+	margin-top: 100px;
+	}
+	
+.login-suc .line1{
+	margin-bottom: 30px;
+	width: 100%;
+	height: 25px;
+	}
+
+	
+.login-suc .line2{
+	text-align:center;
+	color: rgba(255,255,255,0.6);
+	font-family: 'Avenir Next','Lantinghei SC';
+	font-size: 16px;
+	-webkit-font-smoothing: antialiased;
+	
+	margin-bottom: 15px;
+	width: 100%;
+	height: 25px;
+	}
+	
+
+.login-suc .fengexian{
+	height: 4px;
+	border-top: 1px solid rgba(255,255,255,0.6);
+	width: 25px;
+	margin-top: 10px;
+	
+	}
+.login-suc span{
+	margin-left: 10px;
+	margin-right: 10px;
+	}
+.login-suc div{
+	display:inline-block;
+	}
+	
+.login-suc .close-btn{
+	margin-top: 40px;
+	}
+.suc-hidden{
+	display: none;
+	}
+.welcom-hidden{
+	display: none;
+	}
+.welcome{
+	
+		font-size: 16px;
+
+	width: 150px;
+	position:absolute;
+	right: 0;
+	}
+.top a:hover{
+	color: rgba(255,255,255,0.9);
+	}
+	
+.top a{
+	font-size: 16px;
+	font-family: "Georgia", "Tahoma", "Sans-Serif";
+	color: rgba(255,255,255,0.6);
+	text-decoration: none;
+	}
+	
+.message_wrapper{
+	width:1000px;
+	margin:200px auto 0 auto;
+	min-height:1000px;
+	background-color:#e8e8e8;
+	background:rgba(0,0,0,.3);
+	display:block;
+}
+.message_detail{
+	width:300px;
+	height:350px;
+	background-color:#e8e8e8;
+	float:left;
+	margin:10px 10px;
+}
+.message_detail .message{
+	height:50px;
+	width:300px;
+}
+.message_detail .message p{
+	color:#444;
+	margin:0px;
+	display:block;
+	height:50px;
+	line-height:50px;
+}
+.message_detail .photo img{
+	width:300px;
+	height:250px;
+}
+a{
+	text-decoration:none;
+}
+.center .random a{
+	color:white;
+	width:100px;
+	float:right;
+	margin-top:19px;
+}

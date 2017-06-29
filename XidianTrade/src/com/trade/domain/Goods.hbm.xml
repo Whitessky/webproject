@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="com.trade.domain.Goods" table="goods">
+		<id name="goodsId" column="goodsId">
+			<generator class="native"></generator>
+		</id>
+		<property name="goodsName" column="goodsName" length="20"></property>
+		<property name="goodsPrice" column="goodsPrice" length="20"></property>
+		<property name="goodsNote" column="goodsNote" length="20"></property>
+		<property name="goodsContact" column="goodsContact" length="20"></property>
+		<property name="goodsPicture" column="goodsPicture" length="100"></property>
+		<many-to-one name="student" class="com.trade.domain.Student"
+			column="studentNo"></many-to-one>
+	</class>
+</hibernate-mapping>

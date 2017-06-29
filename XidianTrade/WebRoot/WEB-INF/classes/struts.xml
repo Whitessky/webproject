@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+	<constant name="struts.custom.i18n.resources" value="app"></constant>
+	<package name="ssh_trade" extends="struts-default" namespace="/">
+		<action name="student_*" class="studentAction" method="{1}">
+			<result name="input">/index.jsp</result>
+			<result name="loginSuccess" type="redirect">/login_success.jsp</result>
+			<result name="registSuccess">/index.jsp</result>
+			<result name="rootLogin">/frame.jsp</result>
+			<result name="rootFindAll">/jsp/student/list.jsp</result>
+			<result name="deleteSuccess" type="redirectAction">student_rootFindAll.action</result>
+		</action>
+		<action name="goods_*" class="goodsAction" method="{1}">
+			<result name="uploadSuccess" type="redirect">/upload_success.jsp</result>
+			<result name="findAll">/index.jsp</result>
+			<result name="loginedFindAll">/login_success.jsp</result>
+			<result name="input">/upload_failed.jsp</result>
+			<result name="searchSuccess">/index.jsp</result>
+			<result name="loginedSearchSuccess">/login_success.jsp</result>
+			<result name="details">/goods_details.jsp</result>
+			<result name="myGoods">/mygoods.jsp</result>
+			<result name="deleteSuccess" type="redirectAction">goods_myGoods.action</result>
+			<result name="editSuccess">/edit.jsp</result>
+			<result name="updateSuccess" type="redirectAction">goods_myGoods.action</result>
+			
+			<!-- 配置上传文件类型与大小 -->
+			<interceptor-ref name="fileUpload">
+				<param name="allowedTypes">image/png,image/gif,image/jpeg,image/jpg,image/bmp,image/ico,image/x-png,image/pjpeg  </param>
+				<param name="maximumSize">2M</param>
+			</interceptor-ref>
+			<interceptor-ref name="defaultStack"></interceptor-ref>
+		</action>
+	</package>
+</struts>    
+    
